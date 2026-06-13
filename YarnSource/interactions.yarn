@@ -1,0 +1,17 @@
+title: Declarations
+---
+<<declare $chairInteracted = false >>
+===
+
+title: Chair
+---
+<<if $chairInteracted>>
+    It's still just a chair.
+    Not sure what else there is to say about it.
+<<else>>
+    The chair was a chair.
+    It didn't look comfortable.
+    There wasn't much else to say about it, really.
+    <<set $chairInteracted = true>>
+<<endif>>
+===

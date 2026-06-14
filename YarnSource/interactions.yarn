@@ -14,4 +14,8 @@ title: Chair
     There wasn't much else to say about it, really.
     <<set $chairInteracted = true>>
 <<endif>>
+-> Sit in it
+    I will, as soon as we hook up the animations for it.
+-> Leave it
+    No time for sitting around.
 ===

@@ -14,8 +14,25 @@ title: Chair
     There wasn't much else to say about it, really.
     <<set $chairInteracted = true>>
 <<endif>>
+<<jump ChairStandingOptions>>
+===
+title: ChairStandingOptions
+---
 -> Sit in it
-    I will, as soon as we hook up the animations for it.
+    Okie dokie.
+    <<PlayObjectAnimation "SitDown">>
+    <<jump ChairSittingOptions>>
 -> Leave it
     No time for sitting around.
+===
+title: ChairSittingOptions
+---
+Now what?
+-> Contemplate life
+    You think about things for a minute.
+    No profound truths are discovered, I'm afraid.
+-> Stand back up
+    Okay, but this is going to throw errors until we add another animation.
+    <<PlayObjectAnimation "StandUp">>
+    <<jump ChairStandingOptions>>
 ===

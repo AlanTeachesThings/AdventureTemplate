@@ -19,8 +19,8 @@ title: Chair
 title: ChairStandingOptions
 ---
 -> Sit in it
-    Okie dokie.
     <<PlayObjectAnimation "SitDown">>
+    Okie dokie.
     <<jump ChairSittingOptions>>
 -> Leave it
     No time for sitting around.
@@ -31,8 +31,9 @@ Now what?
 -> Contemplate life
     You think about things for a minute.
     No profound truths are discovered, I'm afraid.
+    <<jump ChairSittingOptions>>
 -> Stand back up
-    Okay, but this is going to throw errors until we add another animation.
     <<PlayObjectAnimation "StandUp">>
+    Okay, now what?
     <<jump ChairStandingOptions>>
 ===
